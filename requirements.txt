@@ -1,7 +1,3 @@
 sentence-transformers
 torch
-zipfile
-glob
-pickle
-tqdm
 streamlit
