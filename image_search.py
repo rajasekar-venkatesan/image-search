@@ -12,6 +12,8 @@ import os
 from tqdm import tqdm
 torch.set_num_threads(4)
 
+print(sentence_transformers.__version__)
+print(troch.__version__)
 
 # First, we load the respective CLIP model
 model = SentenceTransformer('clip-ViT-B-32')
