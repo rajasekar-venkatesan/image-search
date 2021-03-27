@@ -1,4 +1,5 @@
 import sentence_transformers
+import transformers
 from sentence_transformers import SentenceTransformer, util
 from PIL import Image
 import glob
@@ -12,8 +13,9 @@ import os
 from tqdm import tqdm
 torch.set_num_threads(4)
 
-print(sentence_transformers.__version__)
-print(troch.__version__)
+print(f'Sentence Transformers Version: {sentence_transformers.__version__}')
+print(f'PyTorch Version: {torch.__version__}')
+print(f'Transformers Versions: {transformers.__version__}')
 
 # First, we load the respective CLIP model
 model = SentenceTransformer('clip-ViT-B-32')
