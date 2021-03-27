@@ -1,4 +1,4 @@
-torch
-transformers
+torch==1.8.0
+transformers==4.4.2
 sentence_transformers==1.0.3
 streamlit
