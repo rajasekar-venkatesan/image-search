@@ -1,4 +1,4 @@
 torch
 transformers
-sentence_transformers
+sentence_transformers==1.0.3
 streamlit
