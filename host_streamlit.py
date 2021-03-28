@@ -12,6 +12,6 @@ query = st.text_input("Enter Search Query: ", "trees near beach")
 num_results = st.slider("Num Search Results", 1, 5, 3, 1)
 
 results = search(query, num_results)
-for item in results:
-    st.write(item[0])
+for index, item in enumerate(results):
+    st.write(f'Result {index+1}: {item[0]}')
     st.image(Image.open(item[1]))
