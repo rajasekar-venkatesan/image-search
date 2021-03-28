@@ -14,4 +14,4 @@ num_results = st.slider("Num Search Results", 1, 5, 3, 1)
 results = search(query, num_results)
 for item in results:
     st.write(item[0])
-    st.write(Image.open(item[1]))
+    st.image(Image.open(item[1]))
