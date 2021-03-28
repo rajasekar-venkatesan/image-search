@@ -13,5 +13,5 @@ num_results = st.slider("Num Search Results", 1, 5, 3, 1)
 
 results = search(query, num_results)
 for index, item in enumerate(results):
-    st.write(f'Result {index+1}: {item[0]}')
-    st.image(Image.open(item[1]))
+    st.write(f'Result {index+1}: {item[0]} : Similarity Score: {item[1]:.3f}')
+    st.image(Image.open(item[2]))
