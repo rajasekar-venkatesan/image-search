@@ -65,7 +65,7 @@ def search(query, k=3):
     # display(query)
     results = []
     for hit in hits:
-        results.append((img_names[hit['corpus_id']], os.path.join(img_folder, img_names[hit['corpus_id']])))
+        results.append((img_names[hit['corpus_id']], hit['score'], os.path.join(img_folder, img_names[hit['corpus_id']])))
         # print(img_names[hit['corpus_id']])
         # display(IPImage(os.path.join(img_folder, img_names[hit['corpus_id']]), width=200))
     return results
